@@ -4,8 +4,7 @@ create table courses(
     course_id serial primary key,
     course_name varchar(255) not null unique,
     description text,
-    tuition numeric(12,2) not null,
-    credits int not null check (credits > 0)
+    tuition numeric(12,2) not null
 );
 
 create table instructors(
